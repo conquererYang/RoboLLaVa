@@ -1,0 +1,32 @@
+engines:
+  Vicuna-13b:
+   openai_api_base: http://0.0.0.0:8000/v1
+   openai_api_key: EMPTY
+  
+  vicuna:
+   openai_api_base: http://127.0.0.1:11434/api/generate #vicuna-7b
+   openai_api_key: EMPTY
+
+
+  llama3:8b:
+   openai_api_base: http://127.0.0.1:11434/api/generate #llama3-8b
+   openai_api_key: EMPTY
+
+  llava:7b:
+   openai_api_base: http://127.0.0.1:11434/api/generate #llava:7b
+   openai_api_key: EMPTY
+  
+  llava-llama3:
+   openai_api_base: http://127.0.0.1:11434/api/generate #llava-llama3
+   openai_api_key: EMPTY
+  
+  mapler/llama3-llava-next-8b:
+   openai_api_base: http://127.0.0.1:11434/api/generate #llama3-llava-next-8b
+   openai_api_key: EMPTY
+
+  robollava:
+   openai_api_base: http://127.0.0.1:11434/api/generate #llava-llama3
+   openai_api_key: EMPTY
+
+
+
