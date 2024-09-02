@@ -3,16 +3,17 @@
 
 RoboLLaVA Model files(format safetensors & gguf): https://huggingface.co/conquererYang/robollava
 RoboLLaVA in ollama: https://ollama.com/yyang/robollava
-![image](https://github.com/user-attachments/assets/64144eb5-fe38-479d-8fdc-b65560bf7be4)
+
 
 ## 🎥 Demo Video
 ###Distinct
 https://www.youtube.com/playlist?list=PLIJnmuEVkn7LE1vMhbhY2SCgFni8Dtkwx
 Includes: 1.Vicuna+ViLD 2.LLaMA3+ViLD 3.LLaVA-llama3 4.RoboLLaVA
-
+![image](https://github.com/user-attachments/assets/64144eb5-fe38-479d-8fdc-b65560bf7be4)
 ###Indistinct
 https://www.youtube.com/playlist?list=PLIJnmuEVkn7LFeiShF2Q-u9KLvlt_POZY
 Includes: 1.Vicuna+ViLD 2.LLaMA3+ViLD 3.LLaVA-llama3 4.RoboLLaVA
+![image](https://github.com/user-attachments/assets/152b24e1-fd78-4922-b747-789f2ac6e326)
 
 
 ## STEPS
