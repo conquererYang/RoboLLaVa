@@ -5,11 +5,6 @@ RoboLLaVA Model files(format safetensors & gguf): https://huggingface.co/conquer
 RoboLLaVA in ollama: https://ollama.com/yyang/robollava
 
 ## 🎥 Demo Video
-### Distinct
-1.Vicuna+ViLD
-[视频2.webm](https://github.com/user-attachments/assets/c4655f6c-9d46-4098-b0df-7075f2673796)
-[视频3.webm](https://github.com/user-attachments/assets/cb22fbce-34c7-4fff-a6b4-8b6f0d8ff479)
-
 
 ## STEPS
 1.Install Dependencies
