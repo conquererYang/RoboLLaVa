@@ -6,11 +6,14 @@ RoboLLaVA in ollama: https://ollama.com/yyang/robollava
 
 ## 🎥 Demo Video
 ###Distinct
-[https://www.youtube.com/playlist?list=PLIJnmuEVkn7LFeiShF2Q-u9KLvlt_POZY](https://www.youtube.com/playlist?list=PLIJnmuEVkn7LE1vMhbhY2SCgFni8Dtkwx)
+https://www.youtube.com/playlist?list=PLIJnmuEVkn7LE1vMhbhY2SCgFni8Dtkwx
 Includes: 1.Vicuna+ViLD 2.LLaMA3+ViLD 3.LLaVA-llama3 4.RoboLLaVA
+
 ###Indistinct
 https://www.youtube.com/playlist?list=PLIJnmuEVkn7LFeiShF2Q-u9KLvlt_POZY
 Includes: 1.Vicuna+ViLD 2.LLaMA3+ViLD 3.LLaVA-llama3 4.RoboLLaVA
+
+
 ## STEPS
 1.Install Dependencies
 environment: Ubuntu22.04 python3.9.10 cuda12.2 Nvidia535.171.04 CoppeliaSim4.4.0 qt=5.12.5
