@@ -1,5 +1,6 @@
 ## 🔔 News
 - $\color{red}{\text{[2024-09-1]}}$ We now realse the **LLaMa3+ViLD** agent codes. the full codes coming soon.
+You can download the LLaMa3+ViLD agent code here: https://www.alipan.com/s/4jFN5tcLEE8
 
 RoboLLaVA Model files(format safetensors & gguf): https://huggingface.co/conquererYang/robollava
 
