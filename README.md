@@ -1,6 +1,6 @@
 ## 🔔 News
 - $\color{red}{\text{[2024-09-1]}}$ We now realse the **LLaMa3+ViLD** agent codes. the full codes coming soon.
-You can download the LLaMa3+ViLD agent code here: https://pan.quark.cn/s/3d09b040086c
+You can also download the LLaMa3+ViLD agent code here: https://pan.quark.cn/s/3d09b040086c
 
 RoboLLaVA Model files(format safetensors): https://huggingface.co/conquererYang/robollava
 We also provide Model files(format safetensors & gguf) here: 1.Safetensors: https://pan.quark.cn/s/89cb43851431 2.gguf: https://pan.quark.cn/s/0132e5c1dd28
@@ -43,7 +43,7 @@ cd CoppeliaSim
 ```
 3.Robotic
 ```bash
-git clone git@github.com:conquererYang/RoboLLaVa.git  
+git clone git@github.com:conquererYang/RoboLLaVa.git  #use git@github.com:conquererYang/Matcha-agent.git to get other large files(ViLD NiCOL etc.)
 conda create -n matcha_new python=3.9
 conda activate matcha_new
 conda install qt=5.12.5
