@@ -2,10 +2,9 @@
 - $\color{red}{\text{[2024-09-1]}}$ We now realse the **LLaMa3+ViLD** agent codes. the full codes coming soon.
 You can download the LLaMa3+ViLD agent code here: https://pan.quark.cn/s/3d09b040086c
 
-RoboLLaVA Model files(format safetensors & gguf): https://huggingface.co/conquererYang/robollava
-
+RoboLLaVA Model files(format safetensors): https://huggingface.co/conquererYang/robollava
+We also provide Model files(format safetensors & gguf) here: 1.Safetensors: https://pan.quark.cn/s/89cb43851431 2.gguf: https://pan.quark.cn/s/0132e5c1dd28
 RoboLLaVA in ollama: https://ollama.com/yyang/robollava
-
 
 ## 🎥 Demo Video
 ###Distinct
