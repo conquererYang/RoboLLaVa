@@ -7,12 +7,11 @@ We also provide robollava(finetuned with llava-llama3 & COCO dataset) agent Mode
 ## Paper Title and abstract
 Active Perception Strategies for Enhanced Multimodal Integration in Robotic Grasping
 
-Abstract— We propose a multimodal robotic agent that addresses the limitations of passive perception and fixed-model deployment through a flexible large-model architecture. This architecture enables dynamic selection of multimodal large language models (MLLMs) based on computational constraints. Building on this foundation, we introduce a logically guided active perception strategy that decides which skills (e.g., knock, weigh) to employ based on intermediate reasoning, rather than exhaustively executing all possible actions. Our work focuses on cohesive skill integration within a unified control loop, optimizing both perception and action. This allows the agent to strategically probe objects’ visual, auditory, tactile, and weight attributes for accurate material inference and robust task completion. Extensive evaluations in the Matcha [7] environment highlight the efficiency and adaptability of our method, especially in active perception and latent information inference for robotic grasping. 
+Abstract— We propose a multimodal robotic agent that addresses the limitations of passive perception and fixed-model deployment through a flexible large-model architecture. This architecture enables dynamic selection of multimodal large language models (MLLMs) based on computational constraints. Building on this foundation, we introduce a logically guided active perception strategy that decides which skills (e.g., knock, weigh) to employ based on intermediate reasoning, rather than exhaustively executing all possible actions. Our work focuses on cohesive skill integration within a unified control loop, optimizing both perception and action. This allows the agent to strategically probe objects’ visual, auditory, tactile, and weight attributes for accurate material inference and robust task completion. Extensive evaluations in the Matcha [7] environment highlight the efficiency and adaptability of our method, especially in active perception and latent information inference for robotic grasping. 
 
 ## 🎥 Paper Introduction Video
-https://github.com/user-attachments/assets/3b1ebb29-5d0c-4266-a597-ed6c5f191f13
-The overview:
-![组织架构图](https://github.com/user-attachments/assets/ac612730-2b8e-41fe-96c1-9dbe7d07f75c)
+https://github.com/user-attachments/assets/808640d9-4099-4418-a59a-e49662e8c9ed
+
 The active Perception Strategy framework:
 ![figure1](https://github.com/user-attachments/assets/88808785-435f-44ad-b59e-3e54ce14f5f4)
 The active perception strategy addresses the limitations of passive sensing in robotic grasping by enabling the robot to strategically collect information from complex multimodal data (Fig.3). Unlike passive perception, which relies on fixed sequences of actions, our approach allows the robotic agent to dynamically select actions based on intermediate reasoning outcomes. This flexibility is crucial for optimizing the decision-making process in environments where information is incomplete or ambiguous.
