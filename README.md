@@ -174,4 +174,5 @@ python main.py -a  #sound_use_adjective
 
 ```
 Citation
-"RoboLLaVA:Enhancing Interactive Multimodal Perception and Robot Decision-Making with LLaVa"
+"Active Perception Strategies for Enhanced Multimodal Integration in Robotic Grasping"
+Author:Yang Yang1, Jiankun Yang2∗, Haibo Lu2, Ruyang Liu3, Huaping Liu4, and Wen Gao1,2, Fellow, IEEE
