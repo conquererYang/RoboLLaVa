@@ -1,23 +1,34 @@
 ## 🔔 News
-- $\color{red}{\text{[2024-09-1]}}$ We now realse the **LLaMa3+ViLD** agent codes. the full codes coming soon.
+- $\color{red}{\text{[2024-09-1]}}$ We now realse the **LLaMa3+ViLD** agent codes. 
 You can also download the LLaMa3+ViLD agent code here: https://pan.quark.cn/s/3d09b040086c
-
 RoboLLaVA Model files(format safetensors): https://huggingface.co/conquererYang/robollava
-We also provide Model files(format safetensors & gguf) here: 1.Safetensors: https://pan.quark.cn/s/89cb43851431 2.gguf: https://pan.quark.cn/s/0132e5c1dd28
+We also provide robollava(finetuned with llava-llama3 & COCO dataset) agent Model files(format safetensors & gguf) here: 1.Safetensors: https://pan.quark.cn/s/89cb43851431 2.gguf: https://pan.quark.cn/s/0132e5c1dd28
 
-RoboLLaVA in ollama: https://ollama.com/yyang/robollava
+## Paper Title and abstract
+Active Perception Strategies for Enhanced Multimodal Integration in Robotic Grasping
+Abstract— We propose a multimodal robotic agent that addresses the limitations of passive perception and fixed-model deployment through a flexible large-model architecture. This architecture enables dynamic selection of multimodal large language models (MLLMs) based on computational constraints. Building on this foundation, we introduce a logically guided active perception strategy that decides which skills (e.g., knock, weigh) to employ based on intermediate reasoning, rather than exhaustively executing all possible actions. Our work focuses on cohesive skill integration within a unified control loop, optimizing both perception and action. This allows the agent to strategically probe objects’ visual, auditory, tactile, and weight attributes for accurate material inference and robust task completion. Extensive evaluations in the Matcha [7] environment highlight the efficiency and adaptability of our method, especially in active perception and latent information inference for robotic grasping. 
 
-## 🎥 Demo Video
-###Distinct
-https://www.youtube.com/playlist?list=PLIJnmuEVkn7LE1vMhbhY2SCgFni8Dtkwx
-Includes: 1.Vicuna+ViLD 2.LLaMA3+ViLD 3.LLaVA-llama3 4.RoboLLaVA
-![image](https://github.com/user-attachments/assets/64144eb5-fe38-479d-8fdc-b65560bf7be4)
-###Indistinct
-https://www.youtube.com/playlist?list=PLIJnmuEVkn7LFeiShF2Q-u9KLvlt_POZY
-Includes: 1.Vicuna+ViLD 2.LLaMA3+ViLD 3.LLaVA-llama3 4.RoboLLaVA
-![image](https://github.com/user-attachments/assets/152b24e1-fd78-4922-b747-789f2ac6e326)
-
-
+## 🎥 Paper Introduction Video
+https://github.com/user-attachments/assets/3b1ebb29-5d0c-4266-a597-ed6c5f191f13
+The overview:
+![组织架构图](https://github.com/user-attachments/assets/ac612730-2b8e-41fe-96c1-9dbe7d07f75c)
+The active Perception Strategy framework:
+![figure1](https://github.com/user-attachments/assets/88808785-435f-44ad-b59e-3e54ce14f5f4)
+The active perception strategy addresses the limitations of passive sensing in robotic grasping by enabling the robot to strategically collect information from complex multimodal data (Fig.3). Unlike passive perception, which relies on fixed sequences of actions, our approach allows the robotic agent to dynamically select actions based on intermediate reasoning outcomes. This flexibility is crucial for optimizing the decision-making process in environments where information is incomplete or ambiguous.
+The active perception strategy is grounded in the principle of logically guided decision-making. The algorithm underlying the active perception strategy involves a sequential decision-making process.The robot operates in an environment where each object possesses both visible attributes (e.g., color, shape, location) and latent characteristics (e.g., material type). The active perception strategy employs a dynamic skill selection mechanism that prioritizes actions based on their expected utility. The robot leverages the outputs from the MLLM to assess the relevance of each potential action. For instance, if the robot identifies an object as lightweight using the ”weigh” skill, it can infer that the material is likely plastic or fiber. In this case, the robot should prioritize using the ”knock” skill for further assessment, as the tactile feedback from the ”touch” skill would likely indicate a soft or flexible texture.
+Since these tactile characteristics are expected for both materials, employing the ”touch” skill would be redundant and illogical. This feedback can provide additional insights
+into the object’s material properties, helping to refine its understanding. 
+The decision to select a specific skill is guided by the outcome of the action in terms of material inference andutility function U{zi, ai}, which reflects the expected grasp execution success. Specifically, U(zi, ai) measures the
+degree to which the observation zi (resulting from action ai) improves the robot’s understanding of the object’s latent characteristics. For example, if the robot infers that an object is lightweight (from the ”weigh” skill), the utility of executing the ”knock” skill would be higher than the ”touch” skill, as the auditory feedback from knocking provides more discriminative information about the material.
+By iteratively incorporating newly observed modalities into the MLLM, the agent refines its belief state regarding an object’s latent features, ultimately deciding when sufficient evidence has been collected to perform a grasp action
+with high confidence. This formulation ensures the agent maintains a flexible approach to skill selection, enabling ondemand usage of sensors and actuators for efficient, accurate object identification and robust task completion.
+## Case Study
+![case1newnew](https://github.com/user-attachments/assets/70d9512c-a94e-44e0-9bc9-e3316223e69c)
+![case2new](https://github.com/user-attachments/assets/762d11bd-9eae-4481-97a0-b5e43daea3dc)
+## Result
+![visual](https://github.com/user-attachments/assets/15512fb9-3c50-426c-a4ac-53647ee20664)
+![image](https://github.com/user-attachments/assets/07262e85-fade-4818-975c-f21b3756d30f)
+After introducing the active perception strategy within the flexible framework of MLLMs, the task execution process no longer exhibited skill redundancy, such as skill repetition or the use of all skills, which is a common issue with the Matcha agent. The active perception strategy enables the robotic agent to make decisions immediately after reasoning about the target material within a limited number of steps (Fig.4). Furthermore, with the active perception strategy, the robotic agent demonstrates a more focused approach to tasks (Fig.5). Agents strategically adjust skill usage to quickly complete active perception and accurately infer the correct interaction target, thereby logically accomplishing the grasping task.
 ## STEPS
 1.Install Dependencies
 environment: Ubuntu22.04 python3.9.10 cuda12.2 Nvidia535.171.04 CoppeliaSim4.4.0 qt=5.12.5
