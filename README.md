@@ -6,6 +6,7 @@ We also provide robollava(finetuned with llava-llama3 & COCO dataset) agent Mode
 
 ## Paper Title and abstract
 Active Perception Strategies for Enhanced Multimodal Integration in Robotic Grasping
+
 Abstract— We propose a multimodal robotic agent that addresses the limitations of passive perception and fixed-model deployment through a flexible large-model architecture. This architecture enables dynamic selection of multimodal large language models (MLLMs) based on computational constraints. Building on this foundation, we introduce a logically guided active perception strategy that decides which skills (e.g., knock, weigh) to employ based on intermediate reasoning, rather than exhaustively executing all possible actions. Our work focuses on cohesive skill integration within a unified control loop, optimizing both perception and action. This allows the agent to strategically probe objects’ visual, auditory, tactile, and weight attributes for accurate material inference and robust task completion. Extensive evaluations in the Matcha [7] environment highlight the efficiency and adaptability of our method, especially in active perception and latent information inference for robotic grasping. 
 
 ## 🎥 Paper Introduction Video
